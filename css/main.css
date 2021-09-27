@@ -647,9 +647,6 @@ MEDIA QUERIES TABLET
     }
     .background_content h1 {
       top: 33%;
-    }
-    .oliva {
-        right: 25%;
     }  
 }
 
@@ -666,6 +663,9 @@ MEDIA QUERIES TABLET
     /*========================
     NAV
     =========================*/
+    .oliva {
+        right: 25%;
+    }
     .navbar-default{
         height: 70px;
         padding-top: 10px;
