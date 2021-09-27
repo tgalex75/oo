@@ -659,13 +659,15 @@ MEDIA QUERIES TABLET
         .starter_container {
             height: 100%;
         }
+        
+        .oliva {
+            right: 25%;
+        }
 
     /*========================
     NAV
     =========================*/
-    .oliva {
-        right: 25%;
-    }
+    
     .navbar-default{
         height: 70px;
         padding-top: 10px;
