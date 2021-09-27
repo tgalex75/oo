@@ -1,4 +1,4 @@
-Restaurant
+VerdeOro di Gerace
 ==========
 
-A template for Restaurant business
+L'olio extravergine della Locride, come lo facevano i nostri Nonni
