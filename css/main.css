@@ -13,9 +13,9 @@ h1 {
    border-bottom: 1px solid #e6f13dff;
 }
 p.desc-text{
-    font-size: 16px;
+    font-size: 15px;
     text-align: justify;
-    margin-top: 15px;s
+    margin-top: 15px;
 }
 
 p.fonte{
@@ -25,6 +25,10 @@ p.fonte{
 .text-content.container {
     margin-top: 65px;
     margin-bottom: -51px;
+}
+
+.titoletto {
+    font-family: "Caveat", cursive;
 }
 .right-text p{
     text-align: left !important;
@@ -211,8 +215,8 @@ INTRO CONTAINER
 
 .oliva{
     position: absolute;
-    right: 600px;
-    top: 120px;
+    right: 35%;
+    top: 32%;
     z-index: 999;
 }
 .follow_container {
@@ -242,7 +246,7 @@ INTRO CONTAINER
 }
  #di{
     color: #fff;
-    font-size: 70px;
+    font-size: 60px;
     position: absolute;
     transform: translate(-160px, -30px);
 }
@@ -251,15 +255,13 @@ INTRO CONTAINER
     font-size: 100px;
 }
 .second-title {
-    font-weight: lighter; 
-    font-size: 18px; 
-    font-style: italic; 
-    text-transform: capitalize;
+    font-family: "Caveat", cursive;
+    font-size: 30px;
     margin-top: 20px;
 }
 
 .white{
-    color: #e6f13dff;
+    color: #fff;
 }
 
 /* ========================
@@ -288,6 +290,11 @@ INTRO CONTAINER
     display: inline-block;
 }
 
+.background_content h1 span {
+    color: white;
+    border-bottom: 8px solid #fff;
+}
+
 .beer.background_content{
     background: url('../images/beer.jpg') no-repeat center center; 
     background-size: cover;
@@ -306,11 +313,11 @@ INTRO CONTAINER
     background-attachment: fixed;
 }
  .pricing.background_content{
-    background: url('../images/DSC_3229.JPG') no-repeat center center; 
+    background: url('../images/mappa.jpg') no-repeat center center; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.3);
     background-blend-mode: multiply;
 }
 .reservation.background_content{
@@ -611,6 +618,23 @@ MEDIA QUERIES MOBILE
         margin: 0px auto;
         /* display: block; */
     }
+
+    .oliva {
+        top: -60%;
+    }
+
+    #di{
+        transform: translate(-120px, -30px);
+    }
+
+    .img-section img{
+        width: 100%;
+        padding: 3px;
+    }
+
+    .img-section-space {
+        display: none;
+    }
 }
 /*========================
 MEDIA QUERIES TABLET
@@ -739,7 +763,7 @@ MEDIA QUERIES TABLET
     }
 
     .background_content h1 {
-        font-size: 4.5em;
+        font-size: 3.5em;
         position: relative;
         top: 41%;
         width: 100%;

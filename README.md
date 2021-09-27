@@ -1,4 +1,4 @@
 VerdeOro di Gerace
 ==========
 
-Olio Extravergine di Oliva della Locride
+L'olio extravergine della Locride, come lo facevano i nostri Nonni
