@@ -13,9 +13,9 @@ h1 {
    border-bottom: 1px solid #e6f13dff;
 }
 p.desc-text{
-    font-size: 15px;
+    font-size: 16px;
     text-align: justify;
-    margin-top: 15px;
+    margin-top: 15px;s
 }
 
 p.fonte{
@@ -288,11 +288,6 @@ INTRO CONTAINER
     display: inline-block;
 }
 
-.background_content h1 span {
-    color: white;
-    border-bottom: 8px solid #fff;
-}
-
 .beer.background_content{
     background: url('../images/beer.jpg') no-repeat center center; 
     background-size: cover;
@@ -315,6 +310,8 @@ INTRO CONTAINER
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-color: rgba(0,0,0,0.8);
+    background-blend-mode: multiply;
 }
 .reservation.background_content{
     background: url('../images/reservation-seat.jpg') no-repeat center center; 
