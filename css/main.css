@@ -651,12 +651,26 @@ MEDIA QUERIES TABLET
     }
     
     @media (min-width: 400px) and (orientation: landscape) {
-        .follow_container{
+        .follow_container {
             top: 20%;
         }
-        .starter_container{
+        .starter_container {
             margin-top: 0;
         }
+        #Verde, #Oro {
+            font-size: 80px;
+         }
+        #di {
+            font-size: 40px;
+            transform: translate(-130px, -20px);
+        }
+        .second-title {
+            margin-top: 45px;
+            font-size: 25px;
+        }
+        #Gerace {
+            font-size: 70px;
+         }
     }
     }
 
