@@ -636,6 +636,7 @@ MEDIA QUERIES MOBILE
         display: none;
     }
 }
+
 /*========================
 MEDIA QUERIES TABLET
 =========================*/
@@ -647,8 +648,17 @@ MEDIA QUERIES TABLET
     }
     .background_content h1 {
       top: 33%;
-    }  
-}
+    }
+    
+    @media (min-width: 400px) and (orientation: landscape) {
+        .follow_container{
+            top: 20%;
+        }
+        .starter_container{
+            margin-top: 0;
+        }
+    }
+    }
 
 /*========================
 MEDIA QUERIES TABLET
