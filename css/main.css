@@ -143,7 +143,7 @@ body, html {
 }
 
 h1, h2, p, span, a {
-    font-family: "Roboto", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     color: #2f2e2f;
     margin: 0;
     padding: 0;
@@ -211,6 +211,34 @@ INTRO CONTAINER
     background-size: cover;
     text-align: center;
     background-position: center;  
+}
+.bottone {
+    background-color: #6E741E;
+    padding: 10px 16px;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 3em;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.bottone:hover {
+    background-color: #e6f13d;
+    color: #000;
 }
 
 .oliva{
@@ -528,7 +556,7 @@ p.sub-footer-text a{
 /* Generic Button Styles */
 .button{
     padding:8px 12px;
-    background:#0A5175;
+    background:#a8b31e;
     display: block;
     width:120px;
     margin:10px 0 0px 0;
@@ -537,15 +565,16 @@ p.sub-footer-text a{
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     text-align:center;
-    font-size:0.8em;
-    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    font-size:1em;
+    text-decoration: none;
+    /* box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
     -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10); */
 }
 
 .button:hover{
-    background:#8BC3A3;
-    color:white;
+    background:#e6f13d;
+    color:black;
 }
 
 /* Send Button Styles */
