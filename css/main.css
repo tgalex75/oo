@@ -204,7 +204,7 @@ INTRO CONTAINER
     margin-top: -21px;
     padding: 0;
     min-width: 100%;
-    height: 100%;
+    min-height: 550px;
     background: url('../images/DSC_3343.JPG') no-repeat center center;
     background-color: rgba(0,0,0,0.8);
     background-blend-mode: multiply;
@@ -213,13 +213,13 @@ INTRO CONTAINER
     background-position: center;  
 }
 .bottone {
-    background-color: #6E741E;
+    background-color: #e6f13d;
     padding: 10px 16px;
     display: inline-block;
     margin-bottom: 0;
-    margin-top: 3em;
+    margin-top: 2em;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.42857143;
     text-align: center;
     white-space: nowrap;
@@ -232,25 +232,25 @@ INTRO CONTAINER
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
-    color: #fff;
+    color: #1e1e1e;
     text-transform: uppercase;
 }
 
 .bottone:hover {
-    background-color: #e6f13d;
-    color: #000;
+    background-color: #6E741E;
+    color: #fff;
 }
 
 .oliva{
     position: absolute;
     right: 35%;
-    top: 32%;
+    top: 22%;
     z-index: 999;
 }
 .follow_container {
     width: 100%;
     position: absolute;
-    top: 35%;
+    top: 18%;
     text-align: center;
 }
 .starter_follow {
@@ -276,7 +276,7 @@ INTRO CONTAINER
     color: #fff;
     font-size: 60px;
     position: absolute;
-    transform: translate(-160px, -30px);
+    left: 25%;
 }
  #Gerace{
     color: #fff;
@@ -630,8 +630,14 @@ MEDIA QUERIES MOBILE
 =========================*/
 
 @media (max-width: 660px) {
+
+    .follow_container{
+        top: 10%;
+    }
+
     .top-title {
         font-size: 67px;
+        line-height: 2em;
     }
 
     .second-title {
@@ -649,12 +655,18 @@ MEDIA QUERIES MOBILE
     }
 
     .oliva {
-        top: -60%;
+        top: 17%;
+        right: 3%;
+        transform: scale(70%);    
     }
 
     #di{
-        transform: translate(-120px, -30px);
+        font-size: 40px;
     }
+
+    #Gerace {
+        font-size: 55px;
+     }
 
     .img-section img{
         width: 100%;
@@ -678,30 +690,7 @@ MEDIA QUERIES TABLET
     .background_content h1 {
       top: 33%;
     }
-    
-    @media (min-width: 400px) and (orientation: landscape) {
-        .follow_container {
-            top: 20%;
-        }
-        .starter_container {
-            margin-top: 0;
-        }
-        #Verde, #Oro {
-            font-size: 80px;
-         }
-        #di {
-            font-size: 40px;
-            transform: translate(-130px, -20px);
-        }
-        .second-title {
-            margin-top: 45px;
-            font-size: 25px;
-        }
-        #Gerace {
-            font-size: 70px;
-         }
-    }
-    }
+}
 
 /*========================
 MEDIA QUERIES TABLET
@@ -709,39 +698,42 @@ MEDIA QUERIES TABLET
 
     @media (min-width: 660px) { 
   
+        
         .starter_container {
             height: 100%;
+            margin-top: 0;
         }
         
         .oliva {
-            right: 25%;
+            right: 20%;
+        }
+        
+    }
+        /*========================
+        NAV
+        =========================*/
+        
+        .navbar-default{
+            height: 70px;
+            padding-top: 10px;
         }
 
-    /*========================
-    NAV
-    =========================*/
-    
-    .navbar-default{
-        height: 70px;
-        padding-top: 10px;
-    }
-
-    nav li{
-        padding-right: -15px;
-    }
-    .navbar-brand{
-        font-family: 'Carattere', cursive;
-        font-size: 34px !important;
-        text-decoration: none;
-        color: white !important;
-    }
-    nav {
-        position: fixed;
-        display: block;
-        position: fixed;
-        width: 100%;
-        height: 55px;
-        z-index: 100;
+        nav li{
+            padding-right: -15px;
+        }
+        .navbar-brand{
+            font-family: 'Carattere', cursive;
+            font-size: 34px !important;
+            text-decoration: none;
+            color: white !important;
+        }
+        nav {
+            position: fixed;
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 55px;
+            z-index: 100;
         margin: 0;
         padding: 0;
         background-color: #1e1e1e;
@@ -876,6 +868,10 @@ MEDIA QUERIE DESKTOP
 
     .starter_container {
         background-attachment: fixed;
+    }
+
+    .oliva {
+        top: 22%;
     }
 
 
