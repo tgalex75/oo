@@ -177,6 +177,7 @@ div#bs-example-navbar-collapse-1 {
     overflow: hidden;
     text-align: center;
     text-decoration: none !important;
+    background-color: rgba(0,0,0,0.8);
 }
 .navbar-brand{
     font-family: 'Carattere', cursive;
