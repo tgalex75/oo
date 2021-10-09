@@ -1,0 +1,251 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+p {
+  font-family: "Source Sans Pro", serif;
+}
+
+/* ! Navbar */
+
+.navbar {
+  line-height: 48px;
+}
+
+.brand-logo {
+  font-family: "Carattere", serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* ! Hero */
+
+.parallax {
+  padding-top: 80px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero {
+  background: url("../img/DSC_3343.JPG") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.titolo,
+.sottotitolo {
+  font-family: "Carattere", serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 6rem;
+}
+
+#verde {
+  color: #6e741e;
+}
+
+#oro {
+  color: #e6f13d;
+}
+
+#di {
+  font-size: 4rem;
+  padding-right: 15rem;
+  margin-top: -2rem;
+}
+
+#gerace {
+  font-size: 6.5rem;
+  margin-top: -3rem;
+  padding-left: 2rem;
+}
+
+.oliva {
+  position: absolute;
+  transform: translate(10rem, -6rem);
+}
+
+.oliva img {
+  width: 9.5rem;
+}
+
+.motto {
+  color: #fff;
+  font-family: "Caveat", serif;
+  font-size: 1.5rem;
+}
+
+.btn-warning {
+  background-color: #e6f13d;
+  border-color: #e6f13d;
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.btn-warning:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: 0.5rem 1rem;
+}
+
+.arrow {
+  font-size: 2em;
+  color: #fff;
+  margin-top: -0.5rem;
+}
+
+/* ! Second */
+
+.second {
+  height: 100%;
+  padding-top: 80px;
+}
+
+.second h3 {
+  padding: 1rem;
+  font-family: "Caveat", serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.riga p {
+  line-height: normal;
+}
+
+.fotine {
+  height: 90%;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.fonte,
+.fonte a {
+  font-size: small;
+  color: #000;
+}
+
+/* ! Third Section */
+
+.third {
+  height: 50vh;
+}
+
+.luoghi {
+  background: url("../img/mappa.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+/* ! -------------- */
+/* !  Media QUERIES */
+/* ! -------------- */
+
+/* ! Smartphone */
+
+@media (min-width: 576px) {
+  .riga p {
+    line-height: 1.65rem;
+  }
+}
+
+/* ! Landscape */
+
+@media (min-width: 576px) and (orientation: Landscape) {
+  .hero {
+    
+  }
+  
+  .titolo, .sottotitolo, #di, #gerace {
+    transform: scale(50%);
+  }
+
+}
+
+/* ! Tablet */
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 5rem;
+  }
+  .titolo,
+  .sottotitolo {
+    font-size: 11rem;
+    padding: 3rem, 0;
+  }
+
+  #di {
+    font-size: 6rem;
+    padding-right: 20rem;
+  }
+
+  #gerace {
+    font-size: 8.5rem;
+  }
+
+  .oliva {
+    transform: translate(28rem, -12rem);
+  }
+
+  .oliva img {
+    width: 15rem;
+  }
+
+  .motto {
+    font-size: 2.3rem;
+  }
+
+  .btn-group-lg > .btn,
+  .btn-lg {
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+/* ! Desktop */
+
+@media (min-width: 992px) {
+  .titolo,
+  .sottotitolo {
+    font-size: 7rem;
+    padding: 0;
+  }
+  #di {
+    font-size: 4rem;
+    padding-right: 20rem;
+  }
+
+  #gerace {
+    font-size: 5.5rem;
+  }
+  .motto {
+    font-size: 1.8rem;
+  }
+  .oliva {
+    transform: translate(46rem, -7rem);
+  }
+  
+  .oliva img {
+    width: 12rem;
+  }
+}
