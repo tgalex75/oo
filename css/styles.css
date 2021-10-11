@@ -1,0 +1,21 @@
+html {
+  font-family: serif;
+}
+
+.gino {
+  border: 1px solid red;
+}
+
+.oliva img {
+  width: 30%;
+}
+
+.motto p {
+  font-family: "Caveat", cursive;
+}
+
+@media (max-width: 768px) {
+  .gino {
+    height: auto;
+  }
+}

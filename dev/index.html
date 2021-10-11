@@ -1,103 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      VerdeOro di Gerace - L'olio Extravergine d'Oliva della Locride
-    </title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>VerdeOro di Gerace - Olio Extravergine di Oliva</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" media="screen" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Carattere&family=Caveat:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome icons (free version)-->
-    <script
-      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style-portfolio.css" />
+    <link rel="stylesheet" href="css/picto-foundry-food.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon-1.ico" type="image/x-icon" />
   </head>
+
   <body>
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
-        <a class="navbar-brand brand-logo" href="#">VerdeOro di Gerace</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#second">L'Olio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#third">I luoghi</a>
-            </li>
-          </ul>
+        <div class="row">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">VerdeOro di Gerace</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav main-nav clear navbar-right">
+              <li>
+                <a class="navactive color_animation" href="#top">BENVENUTI</a>
+              </li>
+              <li><a class="color_animation" href="#story">L'OLIO</a></li>
+              <li><a class="color_animation" href="#pricing">I LUOGHI</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
         </div>
       </div>
+      <!-- /.container-fluid -->
     </nav>
 
-    <!-- Cover -->
-    <section class="container.fluid hero parallax vh-100">
-      <h1 class="titolo my-md-5 my-4 my-lg-1">
-        <span id="verde">Verde</span><span id="oro">Oro</span>
-      </h1>
-      <h2 class="sottotitolo my-md-5 my-lg-1 mb-0" id="di">di</h2>
-      <div class="oliva">
-        <img src="./img/olive.png" alt=""/>
+    <div id="top" class="starter_container bg">
+      <div class="follow_container">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="oliva">
+            <img src="./images/olive.png" alt="" width="150" />
+          </div>
+          <span class="top-title" id="Verde">Verde</span
+          ><span class="top-title" id="Oro">Oro</span><br />
+          <span class="top-title" id="di">di</span><br /><span
+            class="top-title"
+            id="Gerace"
+            >Gerace</span
+          >
+          <!-- <h2 class="top-title">VerdeOro di Gerace</h2> -->
+          <h2 class="white second-title">
+            L'olio extravergine di Oliva come lo facevano i nostri Nonni
+          </h2>
+          <a href="#story"><button class="bottone">Scopri di più</button></a>
+        </div>
       </div>
-      <h2 class="sottotitolo my-md-5 my-4 my-lg-1" id="gerace">Gerace</h2>
+    </div>
 
-      <p class="motto text-center my-5 my-lg-3 px-1">
-        L'olio extravergine di Oliva come lo facevano i nostri Nonni
-      </p>
-      <a class="btn btn-warning btn-lg bottone my-md-5 my-4 my-lg-3" href="#second"
-        >Scopri di più</a
-      >
-      <p class="arrow py-3 py-lg-3"><i class="fas fa-angle-double-down"></i></p>
-    </section>
+    <!-- ============ About Us ============= -->
 
-    <!-- Second Container -->
-
-    <section class="container second" id="second">
-      <h3 class="text-center">L'olio della Locride</h3>
-      <div class="row riga">
-        <div class="col-sm-7 col-lg-8">
-          <p>
+    <section id="story" class="description_content">
+      <div class="text-content container">
+        <div class="col-md-6">
+          <h1 class="titoletto">L'Olio della Locride</h1>
+          <p class="desc-text">
             Con la denominazione olio extra vergine di oliva della Locride si
             indica uno dei Prodotti Agroalimentari Tradizionali Italiani della
             provincia di Reggio Calabria Il territorio di produzione è il
             comprensorio della Locride nella fascia jonica reggina, compreso tra
             Bruzzano e Monasterace, per un numero di 39 comuni della Provincia
             di Reggio Calabria, con estensione a Nord, fino a Badolato, in 3
-            comuni della limitrofa Provincia di Catanzaro. È in fase di
-            elaborazione da parte di vari enti ed associazioni un disciplinare
-            di produzione per il riconoscimento del marchio D.O.P. La
-            coltivazione olivicola in tutte le aziende agricole è biologica.
-          </p>
-        </div>
-        <div class="col-sm-5 col-lg-4 mb-0">
-          <img src="./img/img_002.JPG" class="img-fluid fotine my-1" alt="" />
-        </div>
-
-        <div class="col-sm-7 col-lg-8">
-          <p>
+            comuni della limitrofa Provincia di Catanzaro.<br />
+            È in fase di elaborazione da parte di vari enti ed associazioni un
+            disciplinare di produzione per il riconoscimento del marchio D.O.P.
+            <br />
+            La coltivazione olivicola in tutte le aziende agricole è biologica.
             L'olio migliore è quello ricavato da uliveti collinari e distanti
             dal mare. Il periodo di raccolta delle olive determina le
             caratteristiche organolettiche dell'olio. La raccolta delle olive
@@ -108,53 +110,54 @@
             produttori, mentre alcune aziende agricole della Locride lo
             imbottigliano per poi venderlo nei negozi. L'olio d'oliva della
             Locride viene esportato sui mercati nazionali ed esteri, dove è
-            molto richiesto.
+            molto richiesto. L'olio d'oliva della Locride viene utilizzato in
+            tutte la preparazioni dei piatti tipici della Calabria ed assume una
+            notevole importanza nella dieta mediterranea. In particolare viene
+            utilizzato in Italia e all'estero per il condimento delle insalate e
+            delle verdure, per il suo caratteristico profumo aromatico e sapore
+            particolare. <br />
+            <br />L'olio si ricava da una cultivar calabrese, Grossa di Gerace
+            diffusa lungo il comprensorio jonico (Locride) della Provincia di
+            Reggio Calabria. Suoi sinonimi sono: Geracitana, Mammolese, Paesana,
+            Grossa di Mammola e Dolce. La coltivazione è biologica e la cultivar
+            è autofertile, ha un'elevata resa in olio, anche se trova interesse
+            locale come oliva da mensa.
+          </p>
+          <p class="fonte">
+            fonte
+            <a
+              href="https://it.wikipedia.org/wiki/Olio_extra_vergine_di_oliva_della_Locride"
+              >Wikipedia</a
+            >
           </p>
         </div>
-        <div class="col-sm-5 col-lg-4 mb-0">
-          <img src="./img/img_003.JPG" class="img-fluid fotine my-1" alt="" />
+        <div class="col-md-6">
+          <div class="img-section">
+            <img src="images/img_006.JPG" />
+            <img src="images/img_002.JPG" />
+            <div class="img-section-space"></div>
+            <img src="images/img_003.JPG" />
+            <img src="images/img_004.JPG" />
+            <div class="img-section-space"></div>
+            <img src="images/img_005.JPG" />
+            <img src="images/img_001.jpeg" />
+          </div>
         </div>
-
-        <div class="col-sm-7 col-lg-8">
-          <p>
-            L'olio d'oliva della Locride viene utilizzato in tutte la
-            preparazioni dei piatti tipici della Calabria ed assume una notevole
-            importanza nella dieta mediterranea. In particolare viene utilizzato
-            in Italia e all'estero per il condimento delle insalate e delle
-            verdure, per il suo caratteristico profumo aromatico e sapore
-            particolare. L'olio si ricava da una cultivar calabrese, Grossa di
-            Gerace diffusa lungo il comprensorio jonico (Locride) della
-            Provincia di Reggio Calabria. Suoi sinonimi sono: Geracitana,
-            Mammolese, Paesana, Grossa di Mammola e Dolce. La coltivazione è
-            biologica e la cultivar è autofertile, ha un'elevata resa in olio,
-            anche se trova interesse locale come oliva da mensa.
-          </p>
-        </div>
-        <div class="col-sm-5 col-lg-4 mb-0">
-          <img src="./img/img_004.JPG" class="img-fluid fotine my-1" alt="" />
-        </div>
-      </div>
-      <p class="text-end me-3 fonte">
-        fonte
-        <a
-          href="https://it.wikipedia.org/wiki/Olio_extra_vergine_di_oliva_della_Locride"
-          >Wikipedia</a
-        >
-      </p>
-    </section>
-
-    <!-- Third -->
-
-    <section class="container-fluid third" id="third">
-      <div class="luoghi row text-center h-100">
-        <h4 class="h4 my-auto text-white">
-          Dagli ulivi centenari di <br /><strong>Contrada Stefanelli</strong> -
-          Gerace (RC)
-        </h4>
       </div>
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <!-- ============ Pricing  ============= -->
+
+    <section id="pricing" class="description_content">
+      <div class="pricing background_content">
+        <h1>Contrada Stefanelli - Gerace (RC)</h1>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
