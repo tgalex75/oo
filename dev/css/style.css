@@ -18,11 +18,11 @@ p {
 /* ! Navbar */
 
 .navbar {
-  line-height: 48px;
+  line-height: 2rem;
 }
 
 .brand-logo {
-  font-family: "Carattere", serif;
+  font-family: "Carattere", cursive;
   font-weight: 400;
   font-size: 2rem;
 }
@@ -40,16 +40,21 @@ p {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(55, 55, 55);
   background-blend-mode: multiply;
   background-size: cover;
 }
 .titolo,
 .sottotitolo {
-  font-family: "Carattere", serif;
+  font-family: "Carattere", cursive;
   color: #fff;
   font-weight: 400;
   font-size: 6rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.landscapeview {
+  display: none;
 }
 
 #verde {
@@ -70,21 +75,25 @@ p {
   font-size: 6.5rem;
   margin-top: -3rem;
   padding-left: 2rem;
+  z-index: 3;
 }
 
 .oliva {
   position: absolute;
-  transform: translate(10rem, -6rem);
+  right: 15%;
+  top: 25%;
+
 }
 
 .oliva img {
-  width: 9.5rem;
+  width: 9rem;
 }
 
 .motto {
   color: #fff;
   font-family: "Caveat", serif;
   font-size: 1.5rem;
+  z-index: 3;
 }
 
 .btn-warning {
@@ -165,22 +174,13 @@ p {
 /* ! Smartphone */
 
 @media (min-width: 576px) {
+  .navbar {
+    line-height: 3rem;
+  }
+
   .riga p {
     line-height: 1.65rem;
   }
-}
-
-/* ! Landscape */
-
-@media (min-width: 576px) and (orientation: Landscape) {
-  .hero {
-    
-  }
-  
-  .titolo, .sottotitolo, #di, #gerace {
-    transform: scale(50%);
-  }
-
 }
 
 /* ! Tablet */
@@ -205,7 +205,8 @@ p {
   }
 
   .oliva {
-    transform: translate(28rem, -12rem);
+    right: 5%;
+    top: 30%;
   }
 
   .oliva img {
@@ -220,6 +221,56 @@ p {
   .btn-lg {
     padding: 0.8rem 1.6rem;
   }
+}
+
+/* ! Landscape */
+
+@media (min-width: 576px) and (max-width: 992px) and (orientation: Landscape) {
+  .hero {
+    padding-top: 3.5rem;
+  }
+
+  .landscapeview {
+    display: block;
+    font-size: 4rem;
+    font-family: "Carattere", cursive;
+    padding-right: 7rem;
+  }
+
+  #verdeland {
+    color: #6e741e;
+  }
+
+  #oroland {
+    color: #e6f13d;
+  }
+
+  #verde,
+  #oro,
+  #di,
+  #gerace {
+    display: none;
+  }
+
+  .oliva {
+    top: 22%;
+    right: 5%;
+  }
+
+  .oliva img {
+    width: 9.5rem;
+  }
+
+  .motto {
+    padding: 0;
+    font-size: 1.8rem;
+  }
+
+  .my-5 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
 }
 
 /* ! Desktop */
@@ -242,9 +293,10 @@ p {
     font-size: 1.8rem;
   }
   .oliva {
-    transform: translate(46rem, -7rem);
+    right: 28%;
+    top: 30%;
   }
-  
+
   .oliva img {
     width: 12rem;
   }
