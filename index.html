@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand brand-logo" href="#">VerdeOro di Gerace</a>
         <button
@@ -167,9 +167,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
       var nav = document.querySelector("nav");
-
       window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 100) {
+        if (window.pageYOffset > 250) {
           nav.classList.add("bg-dark", "shadow");
         } else {
           nav.classList.remove("bg-dark", "shadow");
