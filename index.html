@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Carattere&family=Caveat:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- Font Awesome icons (free version)-->
     <script
       src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
@@ -63,7 +64,12 @@
       </h1>
       <h2 class="sottotitolo my-md-5 my-lg-1 mb-0" id="di">di</h2>
 
-      <h2 class="sottotitolo my-md-5 my-4 my-lg-1 position-relative" id="gerace">Gerace</h2>
+      <h2
+        class="sottotitolo my-md-5 my-4 my-lg-1 position-relative"
+        id="gerace"
+      >
+        Gerace
+      </h2>
       <div class="oliva">
         <img src="./img/olive.png" alt="" />
       </div>
@@ -158,8 +164,17 @@
         </h4>
       </div>
     </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector("nav");
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bg-dark", "shadow");
+        } else {
+          nav.classList.remove("bg-dark", "shadow");
+        }
+      });
+    </script>
   </body>
 </html>
