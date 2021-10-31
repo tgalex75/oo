@@ -43,6 +43,7 @@ p {
   background-color: rgb(55, 55, 55);
   background-blend-mode: multiply;
   background-size: cover;
+  background-attachment: fixed;
 }
 .titolo,
 .sottotitolo {
@@ -129,7 +130,7 @@ p {
 
 .second h3 {
   padding: 1rem;
-  font-family: "Caveat", serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -166,6 +167,7 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-size: cover;
+  background-attachment: fixed;
 }
 /* ! -------------- */
 /* !  Media QUERIES */
