@@ -175,10 +175,18 @@ p {
 
 /* ! Smartphone */
 
+@media (max-width: 768px) {
+  .riga:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+}
+
 @media (min-width: 576px) {
   .navbar {
     line-height: 3rem;
   }
+
+  
 
   .riga p {
     line-height: 1.65rem;
@@ -222,6 +230,10 @@ p {
   .btn-group-lg > .btn,
   .btn-lg {
     padding: 0.8rem 1.6rem;
+  }
+
+  .riga {
+    flex-direction: row;
   }
 }
 
