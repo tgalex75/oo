@@ -4,6 +4,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -135,6 +137,11 @@ p {
   font-weight: bold;
 }
 
+.riga {
+  min-height: 150px;
+  margin-bottom: 30px;
+}
+
 .riga p {
   line-height: normal;
 }
@@ -189,7 +196,8 @@ p {
   
 
   .riga p {
-    line-height: 1.65rem;
+    line-height: 1.8rem;
+    font-size: 17px;
   }
 }
 
