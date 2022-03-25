@@ -13,9 +13,9 @@ h1 {
    border-bottom: 1px solid #e6f13dff;
 }
 p.desc-text{
-    font-size: 16px;
+    font-size: 15px;
     text-align: justify;
-    margin-top: 15px;s
+    margin-top: 15px;
 }
 
 p.fonte{
@@ -25,6 +25,10 @@ p.fonte{
 .text-content.container {
     margin-top: 65px;
     margin-bottom: -51px;
+}
+
+.titoletto {
+    font-family: "Caveat", cursive;
 }
 .right-text p{
     text-align: left !important;
@@ -139,7 +143,7 @@ body, html {
 }
 
 h1, h2, p, span, a {
-    font-family: "Roboto", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     color: #2f2e2f;
     margin: 0;
     padding: 0;
@@ -200,6 +204,7 @@ INTRO CONTAINER
     margin-top: -21px;
     padding: 0;
     min-width: 100%;
+    min-height: 550px;
     height: 100%;
     background: url('../images/DSC_3343.JPG') no-repeat center center;
     background-color: rgba(0,0,0,0.8);
@@ -207,6 +212,34 @@ INTRO CONTAINER
     background-size: cover;
     text-align: center;
     background-position: center;  
+}
+.bottone {
+    background-color: #e6f13d;
+    padding: 10px 16px;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 2em;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #1e1e1e;
+    text-transform: uppercase;
+}
+
+.bottone:hover {
+    background-color: #6E741E;
+    color: #fff;
 }
 
 .oliva{
@@ -218,7 +251,7 @@ INTRO CONTAINER
 .follow_container {
     width: 100%;
     position: absolute;
-    top: 35%;
+    top: 18%;
     text-align: center;
 }
 .starter_follow {
@@ -242,24 +275,22 @@ INTRO CONTAINER
 }
  #di{
     color: #fff;
-    font-size: 70px;
+    font-size: 60px;
     position: absolute;
-    transform: translate(-160px, -30px);
+    left: 25%;
 }
  #Gerace{
     color: #fff;
     font-size: 100px;
 }
 .second-title {
-    font-weight: lighter; 
-    font-size: 18px; 
-    font-style: italic; 
-    text-transform: capitalize;
+    font-family: "Caveat", cursive;
+    font-size: 30px;
     margin-top: 20px;
 }
 
 .white{
-    color: #e6f13dff;
+    color: #fff;
 }
 
 /* ========================
@@ -288,6 +319,11 @@ INTRO CONTAINER
     display: inline-block;
 }
 
+.background_content h1 span {
+    color: white;
+    border-bottom: 8px solid #fff;
+}
+
 .beer.background_content{
     background: url('../images/beer.jpg') no-repeat center center; 
     background-size: cover;
@@ -306,11 +342,11 @@ INTRO CONTAINER
     background-attachment: fixed;
 }
  .pricing.background_content{
-    background: url('../images/DSC_3229.JPG') no-repeat center center; 
+    background: url('../images/mappa.jpg') no-repeat center center; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.3);
     background-blend-mode: multiply;
 }
 .reservation.background_content{
@@ -521,7 +557,7 @@ p.sub-footer-text a{
 /* Generic Button Styles */
 .button{
     padding:8px 12px;
-    background:#0A5175;
+    background:#a8b31e;
     display: block;
     width:120px;
     margin:10px 0 0px 0;
@@ -530,15 +566,16 @@ p.sub-footer-text a{
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     text-align:center;
-    font-size:0.8em;
-    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    font-size:1em;
+    text-decoration: none;
+    /* box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
     -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10); */
 }
 
 .button:hover{
-    background:#8BC3A3;
-    color:white;
+    background:#e6f13d;
+    color:black;
 }
 
 /* Send Button Styles */
@@ -594,8 +631,14 @@ MEDIA QUERIES MOBILE
 =========================*/
 
 @media (max-width: 660px) {
+
+    .follow_container{
+        top: 10%;
+    }
+
     .top-title {
         font-size: 67px;
+        line-height: 2em;
     }
 
     .second-title {
@@ -613,9 +656,29 @@ MEDIA QUERIES MOBILE
     }
 
     .oliva {
-        right: 1%;
+        top: 17%;
+        right: 3%;
+        transform: scale(70%);    
+    }
+
+    #di{
+        font-size: 40px;
+    }
+
+    #Gerace {
+        font-size: 55px;
+     }
+
+    .img-section img{
+        width: 100%;
+        padding: 3px;
+    }
+
+    .img-section-space {
+        display: none;
     }
 }
+
 /*========================
 MEDIA QUERIES TABLET
 =========================*/
@@ -627,7 +690,7 @@ MEDIA QUERIES TABLET
     }
     .background_content h1 {
       top: 33%;
-    }  
+    }
 }
 
 /*========================
@@ -636,34 +699,42 @@ MEDIA QUERIES TABLET
 
     @media (min-width: 660px) { 
   
+        
         .starter_container {
             height: 100%;
+            margin-top: 0;
+        }
+        
+        .oliva {
+            right: 20%;
+        }
+        
+    }
+        /*========================
+        NAV
+        =========================*/
+        
+        .navbar-default{
+            height: 70px;
+            padding-top: 10px;
         }
 
-    /*========================
-    NAV
-    =========================*/
-    .navbar-default{
-        height: 70px;
-        padding-top: 10px;
-    }
-
-    nav li{
-        padding-right: -15px;
-    }
-    .navbar-brand{
-        font-family: 'Carattere', cursive;
-        font-size: 34px !important;
-        text-decoration: none;
-        color: white !important;
-    }
-    nav {
-        position: fixed;
-        display: block;
-        position: fixed;
-        width: 100%;
-        height: 55px;
-        z-index: 100;
+        nav li{
+            padding-right: -15px;
+        }
+        .navbar-brand{
+            font-family: 'Carattere', cursive;
+            font-size: 34px !important;
+            text-decoration: none;
+            color: white !important;
+        }
+        nav {
+            position: fixed;
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 55px;
+            z-index: 100;
         margin: 0;
         padding: 0;
         background-color: #1e1e1e;
@@ -743,7 +814,7 @@ MEDIA QUERIES TABLET
     }
 
     .background_content h1 {
-        font-size: 4.5em;
+        font-size: 3.5em;
         position: relative;
         top: 41%;
         width: 100%;
@@ -758,7 +829,7 @@ MEDIA QUERIES TABLET
         padding: 0;
         border-bottom: 10px solid #fff;
     }
-}
+
     /*========================
     Social Connect
     =========================*/

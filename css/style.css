@@ -1,0 +1,325 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+p {
+  font-family: "Source Sans Pro", serif;
+}
+
+/* ! Navbar */
+
+.navbar {
+  line-height: 2rem;
+}
+
+.brand-logo {
+  font-family: "Carattere", cursive;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* ! Hero */
+
+.parallax {
+  padding-top: 80px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero {
+  background: url("../img/DSC_3343.JPG") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: rgb(55, 55, 55);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.titolo,
+.sottotitolo {
+  font-family: "Carattere", cursive;
+  color: #fff;
+  font-weight: 400;
+  font-size: 6rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.landscapeview {
+  display: none;
+}
+
+#verde {
+  color: #6e741e;
+}
+
+#oro {
+  color: #e6f13d;
+}
+
+#di {
+  font-size: 4rem;
+  padding-right: 15rem;
+  margin-top: -2rem;
+}
+
+#gerace {
+  font-size: 6.5rem;
+  margin-top: -3rem;
+  padding-left: 2rem;
+  z-index: 3;
+}
+
+.oliva {
+  position: absolute;
+  right: 15%;
+  top: 25%;
+
+}
+
+.oliva img {
+  width: 9rem;
+}
+
+.motto {
+  color: #fff;
+  font-family: "Caveat", serif;
+  font-size: 1.5rem;
+  z-index: 3;
+}
+
+.btn-warning {
+  background-color: #e6f13d;
+  border-color: #e6f13d;
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.btn-warning:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: 0.5rem 1rem;
+}
+
+.arrow {
+  font-size: 2em;
+  color: #fff;
+  margin-top: -0.5rem;
+}
+
+/* ! Second */
+
+.second {
+  height: 100%;
+  padding-top: 80px;
+}
+
+.second h3 {
+  padding: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.riga {
+  min-height: 150px;
+  margin-bottom: 30px;
+}
+
+.riga p {
+  line-height: normal;
+}
+
+.fotine {
+  height: 90%;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.fonte,
+.fonte a {
+  font-size: small;
+  color: #000;
+}
+
+/* ! Third Section */
+
+.third {
+  height: 50vh;
+}
+
+.luoghi {
+  background: url("../img/mappa.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* ! -------------- */
+/* !  Media QUERIES */
+/* ! -------------- */
+
+/* ! Smartphone */
+
+@media (max-width: 768px) {
+  .riga:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar {
+    line-height: 3rem;
+  }
+
+  
+
+  .riga p {
+    line-height: 1.8rem;
+    font-size: 17px;
+  }
+}
+
+/* ! Tablet */
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 5rem;
+  }
+  .titolo,
+  .sottotitolo {
+    font-size: 11rem;
+    padding: 3rem, 0;
+  }
+
+  #di {
+    font-size: 6rem;
+    padding-right: 20rem;
+  }
+
+  #gerace {
+    font-size: 8.5rem;
+  }
+
+  .oliva {
+    right: 5%;
+    top: 30%;
+  }
+
+  .oliva img {
+    width: 15rem;
+  }
+
+  .motto {
+    font-size: 2.3rem;
+  }
+
+  .btn-group-lg > .btn,
+  .btn-lg {
+    padding: 0.8rem 1.6rem;
+  }
+
+  .riga {
+    flex-direction: row;
+  }
+}
+
+/* ! Landscape */
+
+@media (min-width: 576px) and (max-width: 992px) and (orientation: Landscape) {
+  .hero {
+    padding-top: 3.5rem;
+  }
+
+  .landscapeview {
+    display: block;
+    font-size: 4rem;
+    font-family: "Carattere", cursive;
+    padding-right: 7rem;
+  }
+
+  #verdeland {
+    color: #6e741e;
+  }
+
+  #oroland {
+    color: #e6f13d;
+  }
+
+  #verde,
+  #oro,
+  #di,
+  #gerace {
+    display: none;
+  }
+
+  .oliva {
+    top: 22%;
+    right: 5%;
+  }
+
+  .oliva img {
+    width: 9.5rem;
+  }
+
+  .motto {
+    padding: 0;
+    font-size: 1.8rem;
+  }
+
+  .my-5 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+}
+
+/* ! Desktop */
+
+@media (min-width: 992px) {
+  .titolo,
+  .sottotitolo {
+    font-size: 7rem;
+    padding: 0;
+  }
+  #di {
+    font-size: 4rem;
+    padding-right: 20rem;
+  }
+
+  #gerace {
+    font-size: 5.5rem;
+  }
+  .motto {
+    font-size: 1.8rem;
+  }
+  .oliva {
+    right: 28%;
+    top: 30%;
+  }
+
+  .oliva img {
+    width: 12rem;
+  }
+}
