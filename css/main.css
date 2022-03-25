@@ -211,8 +211,8 @@ INTRO CONTAINER
 
 .oliva{
     position: absolute;
-    right: 600px;
-    top: 120px;
+    right: 5%;
+    top: 5%;
     z-index: 999;
 }
 .follow_container {
@@ -611,6 +611,10 @@ MEDIA QUERIES MOBILE
         margin: 0px auto;
         /* display: block; */
     }
+
+    .oliva {
+        right: 1%;
+    }
 }
 /*========================
 MEDIA QUERIES TABLET
@@ -784,16 +788,21 @@ MEDIA QUERIES TABLET
         width: 325px;
     } 
 
-} /*END OF MEDIA QUERY*/
+ /*END OF MEDIA QUERY*/
 
 /*========================
-MEDIA QUERIE DESKTOP
+MEDIA QUERIE     DESKTOP
 =========================*/
 
 @media (min-width: 1100px) { 
 
     .starter_container {
         background-attachment: fixed;
+    }
+
+    .oliva {
+        top: 0;
+        right: 25%;
     }
 
 
