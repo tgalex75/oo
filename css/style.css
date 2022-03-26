@@ -26,8 +26,7 @@ p {
 .brand-logo {
     font-family: "Carattere", cursive;
     font-weight: 400;
-    font-size: 5vw;
-}
+    font-size: clamp(1rem, 1rem + 10vw, 2rem);}
 
 /* ! Hero */
 
